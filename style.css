@@ -31,7 +31,6 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background: white;
   padding: 15px 5%;
@@ -40,17 +39,27 @@ body {
   min-width: 1200px;
 }
 
-.nav-left, .nav-right {
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
   gap: 20px;
   flex: 1;
 }
 
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
 .logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .logo img {
@@ -71,8 +80,7 @@ body {
   border-radius: 20px;
   padding: 6px 12px;
   background-color: white;
-  width: 250px;
-  margin-left: auto;
+  width: 175px;
 }
 
 .search-bar input {
