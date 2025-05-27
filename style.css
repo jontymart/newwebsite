@@ -288,3 +288,8 @@ body {
   padding: 20px 0;
   font-size: 14px;
 }
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
