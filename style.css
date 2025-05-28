@@ -292,7 +292,6 @@ body {
   color: inherit;
 }
 
-/* Hamburger menu */
 .hamburger {
   display: none;
   font-size: 24px;
@@ -422,6 +421,14 @@ body.force-desktop .hamburger {
   display: none !important;
 }
 
+body.force-desktop .sidebar-toggle {
+  display: none !important;
+}
+
+body.force-desktop #category-list {
+  display: block !important;
+}
+
 body.force-desktop .nav-left,
 body.force-desktop .nav-right {
   display: flex !important;
@@ -446,12 +453,4 @@ body.force-desktop .sidebar {
 
 body.force-desktop .products-grid {
   grid-template-columns: repeat(5, 1fr) !important;
-}
-
-body.force-desktop .sidebar-toggle {
-  display: none !important;
-}
-
-body.force-desktop #category-list {
-  display: block !important;
 }
