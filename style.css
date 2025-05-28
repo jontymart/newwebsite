@@ -416,3 +416,42 @@ body {
     font-size: 13px;
   }
 }
+
+/* ================= Force Desktop Layout ================= */
+body.force-desktop .hamburger {
+  display: none !important;
+}
+
+body.force-desktop .nav-left,
+body.force-desktop .nav-right {
+  display: flex !important;
+  flex-direction: row !important;
+  width: auto !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+body.force-desktop .main-container {
+  flex-direction: row !important;
+}
+
+body.force-desktop .sidebar {
+  width: 250px !important;
+  height: calc(100vh - 80px) !important;
+  position: sticky !important;
+  top: 0 !important;
+  border-right: 1px solid #eee !important;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05) !important;
+}
+
+body.force-desktop .products-grid {
+  grid-template-columns: repeat(5, 1fr) !important;
+}
+
+body.force-desktop .sidebar-toggle {
+  display: none !important;
+}
+
+body.force-desktop #category-list {
+  display: block !important;
+}
