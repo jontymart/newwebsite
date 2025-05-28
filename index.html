@@ -64,6 +64,7 @@
 
     <div class="products-container">
       <div class="products-grid">
+        <!-- Product Cards -->
         <a href="leather.html" class="card-link"><div class="card"><div class="card-img-container"><img src="1.png" alt="Leather Products"></div><div class="label">Leather Products</div></div></a>
         <a href="agriculture.html" class="card-link"><div class="card"><div class="card-img-container"><img src="3.png" alt="Agricultural Commodities"></div><div class="label">Agricultural Commodities</div></div></a>
         <a href="cotton.html" class="card-link"><div class="card"><div class="card-img-container"><img src="2.png" alt="Cotton Materials"></div><div class="label">Cotton Materials</div></div></a>
@@ -124,14 +125,21 @@
       categoryList.classList.toggle('show');
     }
 
-    // Detect desktop mode on mobile
-    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-    const isLargeScreen = window.innerWidth >= 1024;
-    const isForcedDesktop = isMobile && isLargeScreen;
+    function applyForceDesktopLayout() {
+      const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+      const isLargeScreen = window.innerWidth >= 1024;
+      const isForcedDesktop = isMobile && isLargeScreen;
 
-    if (isForcedDesktop) {
-      document.body.classList.add("force-desktop");
+      if (isForcedDesktop) {
+        document.body.classList.add("force-desktop");
+      } else {
+        document.body.classList.remove("force-desktop");
+      }
     }
+
+    // Apply on load and on resize
+    applyForceDesktopLayout();
+    window.addEventListener('resize', applyForceDesktopLayout);
   </script>
 </body>
 </html>
