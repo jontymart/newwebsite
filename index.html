@@ -113,7 +113,7 @@
     </div>
   </footer>
 
-  <!-- ====================== SCRIPTS ====================== -->
+  <!-- Scripts -->
   <script>
     function toggleMenu() {
       document.querySelector('.nav-left').classList.toggle('active');
@@ -124,22 +124,6 @@
       const categoryList = document.getElementById('category-list');
       categoryList.classList.toggle('show');
     }
-
-    function applyForceDesktopLayout() {
-      const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-      const isLargeScreen = window.innerWidth >= 1024;
-      const isForcedDesktop = isMobile && isLargeScreen;
-
-      if (isForcedDesktop) {
-        document.body.classList.add("force-desktop");
-      } else {
-        document.body.classList.remove("force-desktop");
-      }
-    }
-
-    // Apply on load and on resize
-    applyForceDesktopLayout();
-    window.addEventListener('resize', applyForceDesktopLayout);
   </script>
 </body>
 </html>
