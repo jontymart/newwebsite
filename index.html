@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width" />
   <title>JontyMart</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -112,6 +112,7 @@
     </div>
   </footer>
 
+  <!-- ====================== SCRIPTS ====================== -->
   <script>
     function toggleMenu() {
       document.querySelector('.nav-left').classList.toggle('active');
@@ -121,6 +122,15 @@
     function toggleSidebar() {
       const categoryList = document.getElementById('category-list');
       categoryList.classList.toggle('show');
+    }
+
+    // Detect desktop mode on mobile
+    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+    const isLargeScreen = window.innerWidth >= 1024;
+    const isForcedDesktop = isMobile && isLargeScreen;
+
+    if (isForcedDesktop) {
+      document.body.classList.add("force-desktop");
     }
   </script>
 </body>
