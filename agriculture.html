@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agricultural Commodities – JontyMart</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="topbar">
@@ -13,20 +13,22 @@
   </div>
 
   <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
     <div class="nav-left">
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="index.html">Products</a>
       </div>
       <div class="search-bar">
-        <input type="text" placeholder="Search products...">
+        <input type="text" placeholder="Search products..." />
         <button>🔍</button>
       </div>
     </div>
 
     <div class="logo">
       <a href="index.html">
-        <img src="logo3.png" alt="Jonty Mart Logo">
+        <img src="logo3.png" alt="Jonty Mart Logo" />
       </a>
     </div>
 
@@ -42,8 +44,8 @@
 
   <div class="main-container">
     <div class="sidebar">
-      <h3>CATEGORIES</h3>
-      <ul>
+      <h3 onclick="toggleSidebar()" class="sidebar-toggle">CATEGORIES ▼</h3>
+      <ul id="category-list">
         <li><a href="leather.html">Leather Products</a></li>
         <li><a href="agriculture.html">Agricultural Commodities</a></li>
         <li><a href="cotton.html">Cotton Materials</a></li>
@@ -67,160 +69,143 @@
         <a href="basmati-rice.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="basmati-rice.png" alt="Basmati Rice">
+              <img src="basmati-rice.png" alt="Basmati Rice" />
             </div>
             <div class="label">Basmati Rice</div>
           </div>
         </a>
-        
         <a href="green-gram.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="green-gram.png" alt="Green Gram (Moong)">
+              <img src="green-gram.png" alt="Green Gram (Moong)" />
             </div>
             <div class="label">Green Gram (Moong)</div>
           </div>
         </a>
-        
         <a href="pigeon-peas.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="pigeon-peas.png" alt="Pigeon Peas (Toor/Arhar)">
+              <img src="pigeon-peas.png" alt="Pigeon Peas (Toor/Arhar)" />
             </div>
             <div class="label">Pigeon Peas (Toor/Arhar)</div>
           </div>
         </a>
-        
         <a href="bengal-gram.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="bengal-gram.png" alt="Bengal Gram (Chana)">
+              <img src="bengal-gram.png" alt="Bengal Gram (Chana)" />
             </div>
             <div class="label">Bengal Gram (Chana)</div>
           </div>
         </a>
-        
         <a href="chickpeas.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="chickpeas.png" alt="Chickpeas (Kabuli Chana)">
+              <img src="chickpeas.png" alt="Chickpeas (Kabuli Chana)" />
             </div>
             <div class="label">Chickpeas (Kabuli Chana)</div>
           </div>
         </a>
-        
         <a href="kidney-beans.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="kidney-beans.png" alt="Kidney Beans (Rajma)">
+              <img src="kidney-beans.png" alt="Kidney Beans (Rajma)" />
             </div>
             <div class="label">Kidney Beans (Rajma)</div>
           </div>
         </a>
-        
         <a href="turmeric.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="turmeric.png" alt="Turmeric">
+              <img src="turmeric.png" alt="Turmeric" />
             </div>
             <div class="label">Turmeric</div>
           </div>
         </a>
-        
         <a href="red-chilies.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="red-chilies.png" alt="Red Chilies">
+              <img src="red-chilies.png" alt="Red Chilies" />
             </div>
             <div class="label">Red Chilies</div>
           </div>
         </a>
-        
         <a href="coriander.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="coriander.png" alt="Coriander Seeds">
+              <img src="coriander.png" alt="Coriander Seeds" />
             </div>
             <div class="label">Coriander Seeds</div>
           </div>
         </a>
-        
         <a href="cumin.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="cumin.png" alt="Cumin Seeds">
+              <img src="cumin.png" alt="Cumin Seeds" />
             </div>
             <div class="label">Cumin Seeds</div>
           </div>
         </a>
-        
         <a href="black-pepper.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="black-pepper.png" alt="Black Pepper">
+              <img src="black-pepper.png" alt="Black Pepper" />
             </div>
             <div class="label">Black Pepper</div>
           </div>
         </a>
-        
         <a href="cardamom.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="cardamom.png" alt="Cardamom">
+              <img src="cardamom.png" alt="Cardamom" />
             </div>
             <div class="label">Cardamom</div>
           </div>
         </a>
-        
         <a href="cloves.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="cloves.png" alt="Cloves">
+              <img src="cloves.png" alt="Cloves" />
             </div>
             <div class="label">Cloves</div>
           </div>
         </a>
-        
         <a href="neem-leaves.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="neem-leaves.png" alt="Neem Leaves">
+              <img src="neem-leaves.png" alt="Neem Leaves" />
             </div>
             <div class="label">Neem Leaves</div>
           </div>
         </a>
-        
         <a href="holy-basil.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="holy-basil.png" alt="Holy Basil (Tulsi)">
+              <img src="holy-basil.png" alt="Holy Basil (Tulsi)" />
             </div>
             <div class="label">Holy Basil (Tulsi)</div>
           </div>
         </a>
-        
         <a href="ashwagandha.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="ashwagandha.png" alt="Ashwagandha">
+              <img src="ashwagandha.png" alt="Ashwagandha" />
             </div>
             <div class="label">Ashwagandha</div>
           </div>
         </a>
-        
         <a href="giloy.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="giloy.png" alt="Giloy">
+              <img src="giloy.png" alt="Giloy" />
             </div>
             <div class="label">Giloy</div>
           </div>
         </a>
-        
         <a href="moringa.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
-              <img src="moringa.png" alt="Moringa Leaves">
+              <img src="moringa.png" alt="Moringa Leaves" />
             </div>
             <div class="label">Moringa Leaves</div>
           </div>
@@ -250,12 +235,24 @@
         <h3>Contact Info</h3>
         <p>Email: jontymarts@gmail.com</p>
         <p>Phone: +61 401-356-030</p>
-        <p>21 Baltic Street, Newtown,<br>Sydney, Australia 2042</p>
+        <p>21 Baltic Street, Newtown,<br />Sydney, Australia 2042</p>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2023 Jonty Mart. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-left').classList.toggle('active');
+      document.querySelector('.nav-right').classList.toggle('active');
+    }
+
+    function toggleSidebar() {
+      const categoryList = document.getElementById('category-list');
+      categoryList.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
