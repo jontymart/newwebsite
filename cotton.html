@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cotton Materials – JontyMart</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="topbar">
@@ -13,20 +13,22 @@
   </div>
 
   <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
     <div class="nav-left">
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="index.html">Products</a>
       </div>
       <div class="search-bar">
-        <input type="text" placeholder="Search products...">
+        <input type="text" placeholder="Search products..." />
         <button>🔍</button>
       </div>
     </div>
 
     <div class="logo">
       <a href="index.html">
-        <img src="logo3.png" alt="Jonty Mart Logo">
+        <img src="logo3.png" alt="Jonty Mart Logo" />
       </a>
     </div>
 
@@ -42,8 +44,8 @@
 
   <div class="main-container">
     <div class="sidebar">
-      <h3>CATEGORIES</h3>
-      <ul>
+      <h3 onclick="toggleSidebar()" class="sidebar-toggle">CATEGORIES ▼</h3>
+      <ul id="category-list">
         <li><a href="leather.html">Leather Products</a></li>
         <li><a href="agriculture.html">Agricultural Commodities</a></li>
         <li><a href="cotton.html">Cotton Materials</a></li>
@@ -64,112 +66,53 @@
 
     <div class="products-container">
       <div class="products-grid">
+        <!-- Product Cards -->
         <a href="raw-cotton.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="raw-cotton.png" alt="Raw Cotton (Lint/Bales)">
-            </div>
-            <div class="label">Raw Cotton (Lint/Bales)</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="raw-cotton.png" alt="Raw Cotton (Lint/Bales)"></div><div class="label">Raw Cotton (Lint/Bales)</div></div>
         </a>
-        
+
         <a href="cotton-madeups.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="cotton-madeups.png" alt="Cotton Made-ups">
-            </div>
-            <div class="label">Cotton Made-ups</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="cotton-madeups.png" alt="Cotton Made-ups"></div><div class="label">Cotton Made-ups</div></div>
         </a>
-        
+
         <a href="cotton-yarn.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="cotton-yarn.png" alt="Cotton Yarn">
-            </div>
-            <div class="label">Cotton Yarn</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="cotton-yarn.png" alt="Cotton Yarn"></div><div class="label">Cotton Yarn</div></div>
         </a>
-        
+
         <a href="cotton-fabrics.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="cotton-fabrics.png" alt="Cotton Fabrics">
-            </div>
-            <div class="label">Cotton Fabrics</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="cotton-fabrics.png" alt="Cotton Fabrics"></div><div class="label">Cotton Fabrics</div></div>
         </a>
-        
+
         <a href="pillow-covers.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="pillow-covers.png" alt="Pillow Covers">
-            </div>
-            <div class="label">Pillow Covers</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="pillow-covers.png" alt="Pillow Covers"></div><div class="label">Pillow Covers</div></div>
         </a>
-        
+
         <a href="duvet-covers.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="duvet-covers.png" alt="Duvet Covers">
-            </div>
-            <div class="label">Duvet Covers</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="duvet-covers.png" alt="Duvet Covers"></div><div class="label">Duvet Covers</div></div>
         </a>
-        
+
         <a href="cotton-quilts.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="cotton-quilts.png" alt="Cotton Quilts (Rajai)">
-            </div>
-            <div class="label">Cotton Quilts (Rajai)</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="cotton-quilts.png" alt="Cotton Quilts (Rajai)"></div><div class="label">Cotton Quilts (Rajai)</div></div>
         </a>
-        
+
         <a href="mattress-covers.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="mattress-covers.png" alt="Mattress Covers">
-            </div>
-            <div class="label">Mattress Covers</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="mattress-covers.png" alt="Mattress Covers"></div><div class="label">Mattress Covers</div></div>
         </a>
-        
+
         <a href="cotton-mattress.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="cotton-mattress.png" alt="Cotton Mattress (Gadda)">
-            </div>
-            <div class="label">Cotton Mattress (Gadda)</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="cotton-mattress.png" alt="Cotton Mattress (Gadda)"></div><div class="label">Cotton Mattress (Gadda)</div></div>
         </a>
-        
+
         <a href="cotton-curtains.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="cotton-curtains.png" alt="Cotton Curtains">
-            </div>
-            <div class="label">Cotton Curtains</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="cotton-curtains.png" alt="Cotton Curtains"></div><div class="label">Cotton Curtains</div></div>
         </a>
-        
+
         <a href="cushion-covers.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="cushion-covers.png" alt="Cushion Covers">
-            </div>
-            <div class="label">Cushion Covers</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="cushion-covers.png" alt="Cushion Covers"></div><div class="label">Cushion Covers</div></div>
         </a>
-        
+
         <a href="cotton-blankets.html" class="card-link">
-          <div class="card">
-            <div class="card-img-container">
-              <img src="cotton-blankets.png" alt="Cotton Blankets">
-            </div>
-            <div class="label">Cotton Blankets</div>
-          </div>
+          <div class="card"><div class="card-img-container"><img src="cotton-blankets.png" alt="Cotton Blankets"></div><div class="label">Cotton Blankets</div></div>
         </a>
       </div>
     </div>
@@ -196,12 +139,23 @@
         <h3>Contact Info</h3>
         <p>Email: jontymarts@gmail.com</p>
         <p>Phone: +61 401-356-030</p>
-        <p>21 Baltic Street, Newtown,<br>Sydney, Australia 2042</p>
+        <p>21 Baltic Street, Newtown,<br />Sydney, Australia 2042</p>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2023 Jonty Mart. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-left').classList.toggle('active');
+      document.querySelector('.nav-right').classList.toggle('active');
+    }
+
+    function toggleSidebar() {
+      document.getElementById('category-list').classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
