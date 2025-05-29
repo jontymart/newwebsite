@@ -33,6 +33,21 @@
       border-radius: 6px;
       cursor: pointer;
     }
+
+    /* Responsive for page-content */
+    @media (max-width: 767px) {
+      .page-content {
+        padding: 20px 15px;
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-content {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -42,6 +57,8 @@
   </div>
 
   <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
     <div class="nav-left">
       <div class="nav-links">
         <a href="index.html">Home</a>
@@ -71,23 +88,23 @@
 
   <div class="main-container">
     <div class="sidebar">
-      <h3>CATEGORIES</h3>
-      <ul>
-        <li><a href="index.html">Leather Products</a></li>
-        <li><a href="index.html">Agricultural Commodities</a></li>
-        <li><a href="index.html">Cotton Materials</a></li>
-        <li><a href="index.html">Fashion Jewelery</a></li>
-        <li><a href="index.html">Furniture Items</a></li>
-        <li><a href="index.html">Home Decor</a></li>
-        <li><a href="index.html">Kitchen Essentials</a></li>
-        <li><a href="index.html">Marble and Tile Products</a></li>
-        <li><a href="index.html">Handicrafts</a></li>
-        <li><a href="index.html">Ceramic Products</a></li>
-        <li><a href="index.html">Tote Bags</a></li>
-        <li><a href="index.html">Jute Bags</a></li>
-        <li><a href="index.html">Toys</a></li>
-        <li><a href="index.html">Anime and Action Figures</a></li>
-        <li><a href="index.html">Mobile Covers</a></li>
+      <h3 onclick="toggleSidebar()" class="sidebar-toggle">CATEGORIES ▼</h3>
+      <ul id="category-list">
+        <li><a href="leather.html">Leather Products</a></li>
+        <li><a href="agriculture.html">Agricultural Commodities</a></li>
+        <li><a href="cotton.html">Cotton Materials</a></li>
+        <li><a href="jewelry.html">Fashion Jewelery</a></li>
+        <li><a href="furniture.html">Furniture Items</a></li>
+        <li><a href="homedecor.html">Home Decor</a></li>
+        <li><a href="kitchen.html">Kitchen Essentials</a></li>
+        <li><a href="marble.html">Marble and Tile Products</a></li>
+        <li><a href="handicrafts.html">Handicrafts</a></li>
+        <li><a href="ceramic.html">Ceramic Products</a></li>
+        <li><a href="totebags.html">Tote Bags</a></li>
+        <li><a href="jutebags.html">Jute Bags</a></li>
+        <li><a href="toys.html">Toys</a></li>
+        <li><a href="anime.html">Anime and Action Figures</a></li>
+        <li><a href="covers.html">Mobile Covers</a></li>
       </ul>
     </div>
 
@@ -128,5 +145,17 @@
       <p>&copy; 2023 Jonty Mart. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-left').classList.toggle('active');
+      document.querySelector('.nav-right').classList.toggle('active');
+    }
+
+    function toggleSidebar() {
+      const categoryList = document.getElementById('category-list');
+      categoryList.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
