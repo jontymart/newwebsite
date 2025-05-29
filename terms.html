@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Terms of Use | JontyMart</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     .page-content {
       max-width: 900px;
@@ -16,16 +16,33 @@
       line-height: 1.7;
       color: #333;
     }
+
     .page-content h2 {
       color: orange;
       margin-bottom: 20px;
     }
+
     .page-content h3 {
       color: #007BFF;
       margin-top: 25px;
     }
+
     .page-content p {
       margin-bottom: 15px;
+    }
+
+    @media (max-width: 767px) {
+      .page-content {
+        padding: 20px 15px;
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-content {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -36,20 +53,22 @@
   </div>
 
   <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
     <div class="nav-left">
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="index.html">Products</a>
       </div>
       <div class="search-bar">
-        <input type="text" placeholder="Search products...">
+        <input type="text" placeholder="Search products..." />
         <button>🔍</button>
       </div>
     </div>
 
     <div class="logo">
       <a href="index.html">
-        <img src="logo3.png" alt="Jonty Mart Logo">
+        <img src="logo3.png" alt="Jonty Mart Logo" />
       </a>
     </div>
 
@@ -65,23 +84,23 @@
 
   <div class="main-container">
     <div class="sidebar">
-      <h3>CATEGORIES</h3>
-      <ul>
-        <li><a href="index.html">Leather Products</a></li>
-        <li><a href="index.html">Agricultural Commodities</a></li>
-        <li><a href="index.html">Cotton Materials</a></li>
-        <li><a href="index.html">Fashion Jewelery</a></li>
-        <li><a href="index.html">Furniture Items</a></li>
-        <li><a href="index.html">Home Decor</a></li>
-        <li><a href="index.html">Kitchen Essentials</a></li>
-        <li><a href="index.html">Marble and Tile Products</a></li>
-        <li><a href="index.html">Handicrafts</a></li>
-        <li><a href="index.html">Ceramic Products</a></li>
-        <li><a href="index.html">Tote Bags</a></li>
-        <li><a href="index.html">Jute Bags</a></li>
-        <li><a href="index.html">Toys</a></li>
-        <li><a href="index.html">Anime and Action Figures</a></li>
-        <li><a href="index.html">Mobile Covers</a></li>
+      <h3 onclick="toggleSidebar()" class="sidebar-toggle">CATEGORIES ▼</h3>
+      <ul id="category-list">
+        <li><a href="leather.html">Leather Products</a></li>
+        <li><a href="agriculture.html">Agricultural Commodities</a></li>
+        <li><a href="cotton.html">Cotton Materials</a></li>
+        <li><a href="jewelry.html">Fashion Jewelery</a></li>
+        <li><a href="furniture.html">Furniture Items</a></li>
+        <li><a href="homedecor.html">Home Decor</a></li>
+        <li><a href="kitchen.html">Kitchen Essentials</a></li>
+        <li><a href="marble.html">Marble and Tile Products</a></li>
+        <li><a href="handicrafts.html">Handicrafts</a></li>
+        <li><a href="ceramic.html">Ceramic Products</a></li>
+        <li><a href="totebags.html">Tote Bags</a></li>
+        <li><a href="jutebags.html">Jute Bags</a></li>
+        <li><a href="toys.html">Toys</a></li>
+        <li><a href="anime.html">Anime and Action Figures</a></li>
+        <li><a href="covers.html">Mobile Covers</a></li>
       </ul>
     </div>
 
@@ -89,23 +108,31 @@
       <div class="page-content">
         <h2>Terms of Use – JontyMart</h2>
         <p>By using this website, you agree to the terms listed below. Please read them carefully.</p>
+
         <h3>1. Use of Site</h3>
         <p>You must be at least 18 years old to use this website. You agree not to misuse, hack, or harm the site or any user data.</p>
+
         <h3>2. Product Information</h3>
         <p>We strive to keep all product details accurate, but prices and availability are subject to change without notice.</p>
+
         <h3>3. Account Responsibilities</h3>
         <p>If you create an account, you're responsible for maintaining its confidentiality and all activity under it.</p>
+
         <h3>4. Intellectual Property</h3>
         <p>All logos, images, text, and code on this website are the property of JontyMart. You may not reuse any part without permission.</p>
+
         <h3>5. Limitation of Liability</h3>
         <p>We are not liable for any damages resulting from use of this website, including lost data, profits, or interrupted services.</p>
+
         <h3>6. Changes to Terms</h3>
         <p>We may revise these terms at any time. Continued use of our website means you accept the updated terms.</p>
+
         <h3>7. Governing Law</h3>
         <p>These terms are governed by the laws of New South Wales, Australia.</p>
+
         <h3>8. Contact Us</h3>
-        <p>If you have any questions about these Terms, contact us at:<br>
-        Email: jontymarts@gmail.com<br>
+        <p>If you have any questions about these Terms, contact us at:<br />
+        Email: jontymarts@gmail.com<br />
         Phone: +61 401-356-030</p>
       </div>
     </div>
@@ -132,12 +159,24 @@
         <h3>Contact Info</h3>
         <p>Email: jontymarts@gmail.com</p>
         <p>Phone: +61 401-356-030</p>
-        <p>21 Baltic Street, Newtown,<br>Sydney, Australia 2042</p>
+        <p>21 Baltic Street, Newtown,<br />Sydney, Australia 2042</p>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2023 Jonty Mart. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-left').classList.toggle('active');
+      document.querySelector('.nav-right').classList.toggle('active');
+    }
+
+    function toggleSidebar() {
+      const categoryList = document.getElementById('category-list');
+      categoryList.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
