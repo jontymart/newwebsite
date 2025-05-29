@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Tote Bags – JontyMart</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="topbar">
@@ -13,23 +13,22 @@
   </div>
 
   <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <div class="nav-left">
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="index.html">Products</a>
       </div>
       <div class="search-bar">
-        <input type="text" placeholder="Search products...">
+        <input type="text" placeholder="Search products..." />
         <button>🔍</button>
       </div>
     </div>
-
     <div class="logo">
       <a href="index.html">
-        <img src="logo3.png" alt="Jonty Mart Logo">
+        <img src="logo3.png" alt="Jonty Mart Logo" />
       </a>
     </div>
-
     <div class="nav-right">
       <div class="nav-links">
         <a href="cart.html">Cart</a>
@@ -42,8 +41,8 @@
 
   <div class="main-container">
     <div class="sidebar">
-      <h3>CATEGORIES</h3>
-      <ul>
+      <h3 onclick="toggleSidebar()" class="sidebar-toggle">CATEGORIES ▼</h3>
+      <ul id="category-list">
         <li><a href="leather.html">Leather Products</a></li>
         <li><a href="agriculture.html">Agricultural Commodities</a></li>
         <li><a href="cotton.html">Cotton Materials</a></li>
@@ -66,24 +65,19 @@
       <div class="products-grid">
         <a href="canvas-tote-bag.html" class="card-link">
           <div class="card">
-            <div class="card-img-container"><img src="Canvas Tote Bag.png" alt="Canvas Tote Bag"></div>
+            <div class="card-img-container"><img src="Canvas Tote Bag.png" alt="Canvas Tote Bag" /></div>
             <div class="label">Canvas Tote Bag</div>
           </div>
         </a>
-        
-      
         <a href="eco-friendly-tote.html" class="card-link">
           <div class="card">
-            <div class="card-img-container"><img src="Eco-friendly Tote.png" alt="Eco-friendly Tote"></div>
+            <div class="card-img-container"><img src="Eco-friendly Tote.png" alt="Eco-friendly Tote" /></div>
             <div class="label">Eco-friendly Tote</div>
           </div>
         </a>
-        
-    
-        
         <a href="travel-tote.html" class="card-link">
           <div class="card">
-            <div class="card-img-container"><img src="Travel Tote.png" alt="Travel Tote"></div>
+            <div class="card-img-container"><img src="Travel Tote.png" alt="Travel Tote" /></div>
             <div class="label">Travel Tote</div>
           </div>
         </a>
@@ -112,12 +106,23 @@
         <h3>Contact Info</h3>
         <p>Email: jontymarts@gmail.com</p>
         <p>Phone: +61 401-356-030</p>
-        <p>21 Baltic Street, Newtown,<br>Sydney, Australia 2042</p>
+        <p>21 Baltic Street, Newtown,<br />Sydney, Australia 2042</p>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2023 Jonty Mart. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-left').classList.toggle('active');
+      document.querySelector('.nav-right').classList.toggle('active');
+    }
+    function toggleSidebar() {
+      const categoryList = document.getElementById('category-list');
+      categoryList.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
