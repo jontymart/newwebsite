@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Decor – JontyMart</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,6 +13,7 @@
   </div>
 
   <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <div class="nav-left">
       <div class="nav-links">
         <a href="index.html">Home</a>
@@ -23,13 +24,11 @@
         <button>🔍</button>
       </div>
     </div>
-
     <div class="logo">
       <a href="index.html">
         <img src="logo3.png" alt="Jonty Mart Logo">
       </a>
     </div>
-
     <div class="nav-right">
       <div class="nav-links">
         <a href="cart.html">Cart</a>
@@ -42,8 +41,8 @@
 
   <div class="main-container">
     <div class="sidebar">
-      <h3>CATEGORIES</h3>
-      <ul>
+      <h3 onclick="toggleSidebar()" class="sidebar-toggle">CATEGORIES ▼</h3>
+      <ul id="category-list">
         <li><a href="leather.html">Leather Products</a></li>
         <li><a href="agriculture.html">Agricultural Commodities</a></li>
         <li><a href="cotton.html">Cotton Materials</a></li>
@@ -70,49 +69,49 @@
             <div class="label">Wall Hanging</div>
           </div>
         </a>
-        
+
         <a href="table-lamp.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="Table Lamp.png" alt="Table Lamp"></div>
             <div class="label">Table Lamp</div>
           </div>
         </a>
-        
+
         <a href="decorative-mirrors.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="decorative-mirrors1.png" alt="Decorative Mirrors"></div>
             <div class="label">Decorative Mirrors</div>
           </div>
         </a>
-        
+
         <a href="photo-frames.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="photo-frames.png" alt="Photo Frames"></div>
             <div class="label">Photo Frames</div>
           </div>
         </a>
-        
+
         <a href="wall-clock.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="wall-clock.png" alt="Wall Clock"></div>
             <div class="label">Wall Clock</div>
           </div>
         </a>
-        
+
         <a href="table-vases.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="table-vases.png" alt="Table Vases"></div>
             <div class="label">Table Vases</div>
           </div>
         </a>
-        
+
         <a href="scented-candles.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="Scented Candles.png" alt="Scented Candles"></div>
             <div class="label">Scented Candles</div>
           </div>
         </a>
-        
+
         <a href="dream-catchers.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="Dream Catchers.png" alt="Dream Catchers"></div>
@@ -151,5 +150,17 @@
       <p>&copy; 2023 Jonty Mart. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-left').classList.toggle('active');
+      document.querySelector('.nav-right').classList.toggle('active');
+    }
+
+    function toggleSidebar() {
+      const categoryList = document.getElementById('category-list');
+      categoryList.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
