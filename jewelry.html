@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fashion Jewellery – JontyMart</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,6 +13,8 @@
   </div>
 
   <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
     <div class="nav-left">
       <div class="nav-links">
         <a href="index.html">Home</a>
@@ -42,8 +44,8 @@
 
   <div class="main-container">
     <div class="sidebar">
-      <h3>CATEGORIES</h3>
-      <ul>
+      <h3 onclick="toggleSidebar()" class="sidebar-toggle">CATEGORIES ▼</h3>
+      <ul id="category-list">
         <li><a href="leather.html">Leather Products</a></li>
         <li><a href="agriculture.html">Agricultural Commodities</a></li>
         <li><a href="cotton.html">Cotton Materials</a></li>
@@ -72,7 +74,7 @@
             <div class="label">Neck Chains</div>
           </div>
         </a>
-        
+
         <a href="bracelets.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
@@ -81,7 +83,7 @@
             <div class="label">Bracelets</div>
           </div>
         </a>
-        
+
         <a href="pendant-necklaces.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
@@ -90,7 +92,7 @@
             <div class="label">Pendant Necklaces</div>
           </div>
         </a>
-        
+
         <a href="rings.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
@@ -99,7 +101,7 @@
             <div class="label">Rings</div>
           </div>
         </a>
-        
+
         <a href="finger-rings.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
@@ -108,7 +110,7 @@
             <div class="label">Finger Rings</div>
           </div>
         </a>
-        
+
         <a href="earrings-studs.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
@@ -117,7 +119,7 @@
             <div class="label">Earrings (Studs)</div>
           </div>
         </a>
-        
+
         <a href="dog-tags.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
@@ -126,7 +128,7 @@
             <div class="label">Dog Tags</div>
           </div>
         </a>
-        
+
         <a href="anklets.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
@@ -135,7 +137,7 @@
             <div class="label">Anklets</div>
           </div>
         </a>
-        
+
         <a href="nose-rings.html" class="card-link">
           <div class="card">
             <div class="card-img-container">
@@ -176,5 +178,17 @@
       <p>&copy; 2023 Jonty Mart. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-left').classList.toggle('active');
+      document.querySelector('.nav-right').classList.toggle('active');
+    }
+
+    function toggleSidebar() {
+      const categoryList = document.getElementById('category-list');
+      categoryList.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
