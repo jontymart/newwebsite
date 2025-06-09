@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco Leather | Bio-Based PU Leather | JontyMart</title>
+  <meta name="description" content="Eco-leather from JontyMart – a sustainable, bio-based PU leather alternative. Durable, cruelty-free & stylish. Ideal for fashion, furniture, and accessories.">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .product-detail-container {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 30px 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .product-image-side {
+      flex: 1 1 320px;
+      min-width: 260px;
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .product-image-side img {
+      max-width: 100%;
+      max-height: 320px;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+      background: #fff;
+    }
+    .product-info-side {
+      flex: 2 1 400px;
+      min-width: 260px;
+      padding: 40px 30px 30px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .product-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 18px;
+    }
+    .product-desc {
+      font-size: 1.08rem;
+      color: #444;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+    .product-actions {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 22px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+      color: #fff;
+    }
+    .whatsapp-btn { background: #25D366; }
+    .whatsapp-btn:hover { background: #1ebe57; }
+    .email-btn { background: #007BFF; }
+    .email-btn:hover { background: #0056b3; }
+    .contact-btn svg { width: 20px; height: 20px; }
+
+    .long-desc-section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 0 0 30px 0;
+      padding: 35px 30px 30px 30px;
+      max-width: 900px;
+    }
+    .long-desc-section h2 {
+      color: orange;
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+      margin-top: 0;
+    }
+    .long-desc-section ul {
+      margin: 0 0 18px 20px;
+      padding: 0;
+      color: #444;
+      font-size: 1rem;
+    }
+    .long-desc-section p {
+      color: #444;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    @media (max-width: 900px) {
+      .product-detail-container { flex-direction: column; }
+      .product-image-side, .product-info-side { padding: 25px 10px; }
+      .long-desc-section { padding: 20px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <span>ALWAYS OPEN! We work 24/7</span>
+    <span class="call">CALL NOW! +61 401-356-030</span>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-left">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html">Products</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." />
+        <button>🔍</button>
+      </div>
+    </div>
+    <div class="logo">
+      <a href="index.html"><img src="logo3.png" alt="Jonty Mart Logo"></a>
+    </div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="cart.html">Cart</a>
+        <a href="address.html">Address</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3 onclick="toggleSidebar()" class="sidebar-toggle">CATEGORIES ▼</h3>
+      <ul id="category-list">
+        <li><a href="leather.html">Leather Products</a></li>
+        <li><a href="rexine.html">Rexine (Artificial Leather)</a></li>
+        <li><a href="agriculture.html">Agricultural Commodities</a></li>
+        <li><a href="furniture.html">Furniture Items</a></li>
+        <li><a href="cotton.html">Cotton Materials</a></li>
+        <li><a href="kitchen.html">Kitchen Essentials</a></li>
+        <li><a href="handicrafts.html">Handicrafts</a></li>
+      </ul>
+    </div>
+
+    <!-- Product Detail -->
+    <div class="products-container">
+      <div class="product-detail-container">
+        <div class="product-image-side">
+          <img src="eco-leather.png" alt="Eco-Leather (Bio-based PU)">
+        </div>
+        <div class="product-info-side">
+          <div class="product-title">Eco-Leather (Bio-based PU)</div>
+          <div class="product-desc">
+            <b>Eco-Leather</b> is an environmentally responsible alternative to traditional PU leather. Made from renewable bio-based materials, it offers superior softness, flexibility, and sustainability for conscious consumers and businesses alike.
+          </div>
+          <div class="product-actions">
+            <a class="contact-btn whatsapp-btn" href="https://wa.me/61401356030?text=Hello%20JontyMart%2C%20I%20am%20interested%20in%20Eco%20Leather.%20Please%20share%20details." target="_blank">
+              <svg viewBox="0 0 32 32"><path fill="#fff" d="..."/></svg>
+              WhatsApp
+            </a>
+            <a class="contact-btn email-btn" href="mailto:jontymarts@gmail.com?subject=Enquiry%20for%20Eco%20Leather" target="_blank">
+              <svg viewBox="0 0 24 24"><path fill="#fff" d="..."/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Long Description -->
+      <div class="long-desc-section">
+        <h2>About Eco-Leather</h2>
+        <p>
+          Eco-leather is a new generation of synthetic leather made with bio-polyols derived from renewable resources like plant oils and corn-based polymers. It offers the look and feel of genuine leather while minimizing environmental impact.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li><b>Bio-Based:</b> Made from 40–60% renewable sources for sustainable production.</li>
+          <li><b>Low VOC Emissions:</b> Complies with REACH and eco-standards.</li>
+          <li><b>Soft & Breathable:</b> Enhanced comfort for furniture and fashion use.</li>
+          <li><b>Stylish Textures:</b> Available in smooth, grain, or natural matte finishes.</li>
+          <li><b>Odor-Free:</b> No chemical smell, suitable for luxury-grade products.</li>
+        </ul>
+
+        <h2>Applications</h2>
+        <ul>
+          <li>Vegan leather bags and shoes</li>
+          <li>Office chairs and hotel furniture</li>
+          <li>Car seat interiors and dashboards</li>
+          <li>Eco-conscious fashion labels</li>
+          <li>Premium notebooks and gift sets</li>
+        </ul>
+
+        <h2>Why Choose JontyMart Eco-Leather?</h2>
+        <ul>
+          <li>Reliable sourcing with quality certifications</li>
+          <li>Flexible MOQ and export-ready rolls</li>
+          <li>Support for sustainable branding</li>
+          <li>Australian-friendly shipping and compliance</li>
+          <li>Competitive rates for eco-friendly markets</li>
+        </ul>
+
+        <h2>Care Instructions</h2>
+        <p>
+          Clean gently using a soft damp cloth. Do not bleach or use harsh cleaners. Store in dry, cool environments. Eco-leather is designed to last with minimal maintenance.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Jonty Mart delivers eco-smart solutions with a wide range of artificial leather, including bio-based PU. We cater to responsible businesses across Australia looking for quality and sustainability.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Products</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: jontymarts@gmail.com</p>
+        <p>Phone: +61 401-356-030</p>
+        <p>21 Baltic Street, Newtown, Sydney, Australia 2042</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Jonty Mart. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-left').classList.toggle('active');
+      document.querySelector('.nav-right').classList.toggle('active');
+    }
+    function toggleSidebar() {
+      const categoryList = document.getElementById('category-list');
+      categoryList.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
