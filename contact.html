@@ -22,7 +22,7 @@
       margin-bottom: 20px;
     }
 
-    .page-content h3 {
+    .page-content h3, .page-content h4 {
       color: #007BFF;
       margin-top: 25px;
     }
@@ -50,7 +50,6 @@
 
   <div class="navbar">
     <div class="hamburger" onclick="toggleMenu()">☰</div>
-
     <div class="nav-left">
       <div class="nav-links">
         <a href="index.html">Home</a>
@@ -106,12 +105,22 @@
         <p>If you have any questions about products, bulk orders, or delivery options, feel free to reach out using the details below.</p>
 
         <h3>JontyMart Contact Details</h3>
-        <p><strong>Email:</strong> jontymarts@gmail.com<br />
-           <strong>Phone:</strong> +61 401-356-030<br />
-           <strong>Address:</strong> 21 Baltic Street, Newtown, Sydney, Australia 2042</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+          <div style="flex: 1; min-width: 280px;">
+            <h4>Australia Office</h4>
+            <p><strong>Email:</strong> jontymarts@gmail.com<br />
+               <strong>Phone:</strong> +61 401-356-030<br />
+               <strong>Address:</strong> 21 Baltic Street, Newtown, Sydney, Australia 2042</p>
+          </div>
+          <div style="flex: 1; min-width: 280px;">
+            <h4>India Office</h4>
+            <p><strong>Email:</strong> jontymarts@gmail.com<br />
+               <strong>Phone:</strong> +91 7870587797<br />
+               <strong>Address:</strong> Sangam Vihar, New Delhi, India 10085</p>
+          </div>
+        </div>
 
         <h3>Quick Contact Form</h3>
-        <!-- Google Form Embed -->
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpZ5Wz78ETfJlBO6dh1qup0-qc9j2YGIVn9Tjvak2gMVvBdg/viewform?embedded=true"
                 width="100%" height="856" frameborder="0" marginheight="0" marginwidth="0">
           Loading…
