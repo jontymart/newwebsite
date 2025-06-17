@@ -12,30 +12,18 @@
     <span class="call">CALL NOW! +61 401-356-030</span>
   </div>
 
+  <!-- Navbar: Consistent -->
   <div class="navbar">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="nav-left">
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="index.html">Products</a>
-      </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Search products...">
-        <button>🔍</button>
-      </div>
+    <div class="nav-link-left">
+      <a href="index.html">Home</a>
     </div>
     <div class="logo">
       <a href="index.html">
         <img src="logo3.png" alt="Jonty Mart Logo">
       </a>
     </div>
-    <div class="nav-right">
-      <div class="nav-links">
-        <a href="cart.html">Cart</a>
-        <a href="address.html">Address</a>
-        <a href="login.html">Login</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <div class="nav-link-right">
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 
@@ -46,7 +34,7 @@
         <li><a href="leather.html">Leather Products</a></li>
         <li><a href="agriculture.html">Agricultural Commodities</a></li>
         <li><a href="cotton.html">Cotton Materials</a></li>
-        <li><a href="jewelry.html">Fashion Jewelery</a></li>
+        <li><a href="jewelry.html">Fashion Jewelry</a></li>
         <li><a href="furniture.html">Furniture Items</a></li>
         <li><a href="homedecor.html">Home Decor</a></li>
         <li><a href="kitchen.html">Kitchen Essentials</a></li>
@@ -69,21 +57,18 @@
             <div class="label">Wooden Handicraft</div>
           </div>
         </a>
-
         <a href="brass-artifacts.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="Brass Artifacts.png" alt="Brass Artifacts"></div>
             <div class="label">Brass Artifacts</div>
           </div>
         </a>
-
         <a href="handmade-pots.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="Handmade Pots.png" alt="Handmade Pots"></div>
             <div class="label">Handmade Pots</div>
           </div>
         </a>
-
         <a href="candle-holders.html" class="card-link">
           <div class="card">
             <div class="card-img-container"><img src="Candle Holders.png" alt="Candle Holders"></div>
@@ -94,6 +79,7 @@
     </div>
   </div>
 
+  <!-- Footer: Consistent -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-section">
@@ -104,7 +90,6 @@
         <h3>Quick Links</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">Products</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Use</a></li>
           <li><a href="faq.html">FAQs</a></li>
@@ -124,11 +109,6 @@
   </footer>
 
   <script>
-    function toggleMenu() {
-      document.querySelector('.nav-left').classList.toggle('active');
-      document.querySelector('.nav-right').classList.toggle('active');
-    }
-
     function toggleSidebar() {
       const categoryList = document.getElementById('category-list');
       categoryList.classList.toggle('show');
