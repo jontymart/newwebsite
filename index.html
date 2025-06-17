@@ -7,47 +7,37 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Top Bar -->
   <div class="topbar">
     <span>ALWAYS OPEN! We work 24/7</span>
     <span class="call">CALL NOW! +61 401-356-030</span>
   </div>
 
+  <!-- Navigation Bar -->
   <div class="navbar">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-    <div class="nav-left">
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="index.html">Products</a>
-      </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Search products..." />
-        <button>🔍</button>
-      </div>
+    <div class="nav-link-left">
+      <a href="index.html">Home</a>
     </div>
-
     <div class="logo">
-      <a href="index.html"><img src="logo3.png" alt="Jonty Mart Logo" /></a>
+      <a href="index.html">
+        <img src="logo3.png" alt="Jonty Mart Logo" />
+      </a>
     </div>
-
-    <div class="nav-right">
-      <div class="nav-links">
-        <a href="cart.html">Cart</a>
-        <a href="address.html">Address</a>
-        <a href="login.html">Login</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <div class="nav-link-right">
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 
+  <!-- Main Content -->
   <div class="main-container">
+    <!-- Sidebar -->
     <div class="sidebar">
       <h3 onclick="toggleSidebar()" class="sidebar-toggle">CATEGORIES ▼</h3>
       <ul id="category-list">
         <li><a href="leather.html">Leather Products</a></li>
         <li><a href="agriculture.html">Agricultural Commodities</a></li>
         <li><a href="cotton.html">Cotton Materials</a></li>
-        <li><a href="jewelry.html">Fashion Jewelery</a></li>
+        <li><a href="jewelry.html">Fashion Jewelry</a></li>
         <li><a href="furniture.html">Furniture Items</a></li>
         <li><a href="homedecor.html">Home Decor</a></li>
         <li><a href="kitchen.html">Kitchen Essentials</a></li>
@@ -62,39 +52,146 @@
       </ul>
     </div>
 
+    <!-- Products Grid -->
     <div class="products-container">
       <div class="products-grid">
-        <!-- Product Cards -->
-        <a href="leather.html" class="card-link"><div class="card"><div class="card-img-container"><img src="1.png" alt="Leather Products"></div><div class="label">Leather Products</div></div></a>
-        <a href="agriculture.html" class="card-link"><div class="card"><div class="card-img-container"><img src="3.png" alt="Agricultural Commodities"></div><div class="label">Agricultural Commodities</div></div></a>
-        <a href="cotton.html" class="card-link"><div class="card"><div class="card-img-container"><img src="2.png" alt="Cotton Materials"></div><div class="label">Cotton Materials</div></div></a>
-        <a href="jewelry.html" class="card-link"><div class="card"><div class="card-img-container"><img src="14.png" alt="Fashion Jewelery"></div><div class="label">Fashion Jewelery</div></div></a>
-        <a href="furniture.html" class="card-link"><div class="card"><div class="card-img-container"><img src="4.png" alt="Furniture Items"></div><div class="label">Furniture Items</div></div></a>
-        <a href="homedecor.html" class="card-link"><div class="card"><div class="card-img-container"><img src="5.png" alt="Home Decor"></div><div class="label">Home Decor</div></div></a>
-        <a href="kitchen.html" class="card-link"><div class="card"><div class="card-img-container"><img src="15.png" alt="Kitchen Essentials"></div><div class="label">Kitchen Essentials</div></div></a>
-        <a href="marble.html" class="card-link"><div class="card"><div class="card-img-container"><img src="6.png" alt="Marble and Tile Products"></div><div class="label">Marble and Tile Products</div></div></a>
-        <a href="handicrafts.html" class="card-link"><div class="card"><div class="card-img-container"><img src="8.png" alt="Handicrafts"></div><div class="label">Handicrafts</div></div></a>
-        <a href="ceramic.html" class="card-link"><div class="card"><div class="card-img-container"><img src="9.png" alt="Ceramic Products"></div><div class="label">Ceramic Products</div></div></a>
-        <a href="totebags.html" class="card-link"><div class="card"><div class="card-img-container"><img src="11.png" alt="Tote Bags"></div><div class="label">Tote Bags</div></div></a>
-        <a href="jutebags.html" class="card-link"><div class="card"><div class="card-img-container"><img src="10.png" alt="Jute Bags"></div><div class="label">Jute Bags</div></div></a>
-        <a href="toys.html" class="card-link"><div class="card"><div class="card-img-container"><img src="7.png" alt="Toys"></div><div class="label">Toys</div></div></a>
-        <a href="anime.html" class="card-link"><div class="card"><div class="card-img-container"><img src="12.png" alt="Anime and Action Figures"></div><div class="label">Anime and Action Figures</div></div></a>
-        <a href="covers.html" class="card-link"><div class="card"><div class="card-img-container"><img src="13.png" alt="Mobile Covers"></div><div class="label">Mobile Covers</div></div></a>
+        <a href="leather.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="1.png" alt="Leather Products">
+            </div>
+            <div class="label">Leather Products</div>
+          </div>
+        </a>
+        <a href="agriculture.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="3.png" alt="Agricultural Commodities">
+            </div>
+            <div class="label">Agricultural Commodities</div>
+          </div>
+        </a>
+        <a href="cotton.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="2.png" alt="Cotton Materials">
+            </div>
+            <div class="label">Cotton Materials</div>
+          </div>
+        </a>
+        <a href="jewelry.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="14.png" alt="Fashion Jewelry">
+            </div>
+            <div class="label">Fashion Jewelry</div>
+          </div>
+        </a>
+        <a href="furniture.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="4.png" alt="Furniture Items">
+            </div>
+            <div class="label">Furniture Items</div>
+          </div>
+        </a>
+        <a href="homedecor.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="5.png" alt="Home Decor">
+            </div>
+            <div class="label">Home Decor</div>
+          </div>
+        </a>
+        <a href="kitchen.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="15.png" alt="Kitchen Essentials">
+            </div>
+            <div class="label">Kitchen Essentials</div>
+          </div>
+        </a>
+        <a href="marble.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="6.png" alt="Marble and Tile Products">
+            </div>
+            <div class="label">Marble and Tile Products</div>
+          </div>
+        </a>
+        <a href="handicrafts.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="8.png" alt="Handicrafts">
+            </div>
+            <div class="label">Handicrafts</div>
+          </div>
+        </a>
+        <a href="ceramic.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="9.png" alt="Ceramic Products">
+            </div>
+            <div class="label">Ceramic Products</div>
+          </div>
+        </a>
+        <a href="totebags.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="11.png" alt="Tote Bags">
+            </div>
+            <div class="label">Tote Bags</div>
+          </div>
+        </a>
+        <a href="jutebags.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="10.png" alt="Jute Bags">
+            </div>
+            <div class="label">Jute Bags</div>
+          </div>
+        </a>
+        <a href="toys.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="7.png" alt="Toys">
+            </div>
+            <div class="label">Toys</div>
+          </div>
+        </a>
+        <a href="anime.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="12.png" alt="Anime and Action Figures">
+            </div>
+            <div class="label">Anime and Action Figures</div>
+          </div>
+        </a>
+        <a href="covers.html" class="card-link">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="13.png" alt="Mobile Covers">
+            </div>
+            <div class="label">Mobile Covers</div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-section">
         <h3>About Us</h3>
-        <p>Jonty Mart is your trusted hub for importing and exporting high-quality Indian goods to Australia. From leather and handicrafts to home décor, we bridge the finest products between both nations with integrity and commitment.Jonty Mart is your trusted hub for importing and exporting high-quality Indian goods to Australia. From leather and handicrafts to home décor, we bridge the finest products between both nations with integrity and commitment.</p>
+        <p>
+          Jonty Mart is your trusted hub for importing and exporting high-quality Indian goods to Australia. From leather and handicrafts to home décor, we bridge the finest products between both nations with integrity and commitment.
+        </p>
       </div>
       <div class="footer-section">
         <h3>Quick Links</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">Products</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Use</a></li>
           <li><a href="faq.html">FAQs</a></li>
@@ -113,13 +210,7 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script>
-    function toggleMenu() {
-      document.querySelector('.nav-left').classList.toggle('active');
-      document.querySelector('.nav-right').classList.toggle('active');
-    }
-
     function toggleSidebar() {
       const categoryList = document.getElementById('category-list');
       categoryList.classList.toggle('show');
