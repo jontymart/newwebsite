@@ -48,32 +48,18 @@
     <span class="call">CALL NOW! +61 401-356-030</span>
   </div>
 
+  <!-- Updated Navbar -->
   <div class="navbar">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="nav-left">
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="index.html">Products</a>
-      </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Search products..." />
-        <button>🔍</button>
-      </div>
+    <div class="nav-link-left">
+      <a href="index.html">Home</a>
     </div>
-
     <div class="logo">
       <a href="index.html">
         <img src="logo3.png" alt="Jonty Mart Logo" />
       </a>
     </div>
-
-    <div class="nav-right">
-      <div class="nav-links">
-        <a href="cart.html">Cart</a>
-        <a href="address.html">Address</a>
-        <a href="login.html">Login</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <div class="nav-link-right">
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 
@@ -139,7 +125,7 @@
         <h3>Quick Links</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">Products</a></li>
+          <!-- Products ka pura li hata diya -->
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="terms.html">Terms of Use</a></li>
           <li><a href="faq.html">FAQs</a></li>
@@ -159,11 +145,6 @@
   </footer>
 
   <script>
-    function toggleMenu() {
-      document.querySelector('.nav-left').classList.toggle('active');
-      document.querySelector('.nav-right').classList.toggle('active');
-    }
-
     function toggleSidebar() {
       const categoryList = document.getElementById('category-list');
       categoryList.classList.toggle('show');
