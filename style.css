@@ -27,6 +27,7 @@ body {
   font-weight: bold;
 }
 
+/* ======= NAVBAR STYLES ======= */
 .navbar {
   display: flex;
   align-items: center;
@@ -34,29 +35,55 @@ body {
   padding: 15px 5%;
   border-bottom: 1px solid #eee;
   position: relative;
+  justify-content: space-between;
 }
 
-.nav-left,
-.nav-right {
+.nav-link-left,
+.nav-link-right {
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 20px;
-  flex: 1;
 }
 
-.nav-left {
+.nav-link-left {
   justify-content: flex-start;
 }
 
-.nav-right {
+.nav-link-right {
   justify-content: flex-end;
 }
 
+.nav-link-left a,
+.nav-link-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.2s;
+  white-space: nowrap;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.nav-link-left a:hover,
+.nav-link-right a:hover {
+  color: orange;
+  background: none;
+  text-decoration: none;
+}
+
 .logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 1;
+  position: static;
+  left: auto;
+  transform: none;
 }
 
 .logo img {
@@ -70,51 +97,7 @@ body {
   transform: scale(1.05);
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  padding: 6px 12px;
-  background-color: white;
-  width: 175px;
-}
-
-.search-bar input {
-  border: none;
-  outline: none;
-  font-size: 14px;
-  padding: 5px;
-  width: 100%;
-}
-
-.search-bar button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  color: #555;
-}
-
-.nav-links {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 15px;
-  transition: color 0.2s;
-  white-space: nowrap;
-}
-
-.nav-links a:hover {
-  color: orange;
-}
-
+/* ============== Sidebar & Main ============== */
 .main-container {
   display: flex;
   flex: 1;
@@ -292,55 +275,17 @@ body {
   color: inherit;
 }
 
-.hamburger {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-  user-select: none;
-}
-
 /* ============== Responsive Styles ============== */
 @media (max-width: 1199px) {
-  .hamburger {
-    display: block;
-  }
-
   .navbar {
-    flex-wrap: wrap;
     padding: 10px;
   }
-
-  .logo {
-    position: relative;
-    transform: none;
-    left: auto;
-    margin: 10px auto;
+  .logo img {
+    height: 50px;
   }
-
-  .search-bar {
-    width: 100%;
-  }
-
-  .nav-left,
-  .nav-right {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background-color: white;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .nav-left.active,
-  .nav-right.active {
-    display: flex;
-  }
-
   .main-container {
     flex-direction: column;
   }
-
   .sidebar {
     width: 100%;
     height: auto;
@@ -349,21 +294,17 @@ body {
     border: none;
     border-bottom: 1px solid #eee;
   }
-
   .products-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .footer-content {
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
-
   .footer-section {
     text-align: center;
   }
-
   .sidebar-toggle {
     display: block;
     font-size: 18px;
@@ -373,44 +314,55 @@ body {
     margin-bottom: 10px;
     color: #333;
   }
-
   #category-list {
     display: none;
     flex-direction: column;
   }
-
   #category-list.show {
     display: flex;
   }
 }
 
 @media (max-width: 767px) {
+  .navbar {
+    flex-direction: row;
+    padding: 8px 4px;
+  }
+  .nav-link-left a,
+  .nav-link-right a {
+    font-size: 14px;
+  }
+  .logo img {
+    height: 40px;
+  }
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .card-img-container {
     height: 140px;
   }
-
-  .logo img {
-    height: 50px;
-  }
-
   .footer-section {
     padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    padding: 6px 2px;
+  }
+  .nav-link-left a,
+  .nav-link-right a {
+    font-size: 13px;
+  }
+  .logo img {
+    height: 32px;
+  }
   .products-grid {
     grid-template-columns: 1fr;
   }
-
   .card-img-container {
     height: 120px;
   }
-
   .label {
     font-size: 13px;
   }
