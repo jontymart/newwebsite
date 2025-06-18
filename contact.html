@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | JontyMart</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-content {
+      max-width: 900px;
+      background: white;
+      margin: auto;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .page-content h2 {
+      color: orange;
+      margin-bottom: 20px;
+    }
+
+    .page-content h3, .page-content h4 {
+      color: #007BFF;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 767px) {
+      .page-content {
+        padding: 20px 15px;
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-content {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔁 Load Header -->
+  <div id="header"></div>
+
+  <!-- 🔁 Main -->
+  <div class="main-container">
+
+    <!-- 🔁 Load Sidebar -->
+    <div id="sidebar"></div>
+
+    <!-- ✅ Contact Page Specific Content -->
+    <div class="products-container">
+      <div class="page-content">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about products, bulk orders, or delivery options, feel free to reach out using the details below.</p>
+
+        <h3>JontyMart Contact Details</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+          <div style="flex: 1; min-width: 280px;">
+            <h4>Australia Office</h4>
+            <p><strong>Email:</strong> jontymarts@gmail.com<br />
+               <strong>Phone:</strong> +61 401-356-030<br />
+               <strong>Address:</strong> 21 Baltic Street, Newtown, Sydney, Australia 2042</p>
+          </div>
+          <div style="flex: 1; min-width: 280px;">
+            <h4>India Office</h4>
+            <p><strong>Email:</strong> jontymarts@gmail.com<br />
+               <strong>Phone:</strong> +91 7870587797<br />
+               <strong>Address:</strong> Sangam Vihar, New Delhi, India 10085</p>
+          </div>
+        </div>
+
+        <h3>Quick Contact Form</h3>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpZ5Wz78ETfJlBO6dh1qup0-qc9j2YGIVn9Tjvak2gMVvBdg/viewform?embedded=true"
+                width="100%" height="856" frameborder="0" marginheight="0" marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔁 Load Footer -->
+  <div id="footer"></div>
+
+  <!-- ✅ Global JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Decor – JontyMart</title>
+  <meta name="description" content="Shop handcrafted Indian home decor items including wall hangings, candles, lamps, and more – perfect for export.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .product-detail-container {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 30px 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .product-image-side {
+      flex: 1 1 320px;
+      min-width: 260px;
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .product-image-side img {
+      max-width: 100%;
+      max-height: 320px;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+      background: #fff;
+    }
+    .product-info-side {
+      flex: 2 1 400px;
+      min-width: 260px;
+      padding: 40px 30px 30px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .product-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 18px;
+    }
+    .product-desc {
+      font-size: 1.08rem;
+      color: #444;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+    .product-actions {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 22px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+      color: #fff;
+    }
+    .whatsapp-btn { background: #25D366; }
+    .whatsapp-btn:hover { background: #1ebe57; }
+    .email-btn { background: #007BFF; }
+    .email-btn:hover { background: #0056b3; }
+    .long-desc-section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 0 0 30px 0;
+      padding: 35px 30px 30px 30px;
+      max-width: 900px;
+    }
+    .long-desc-section h2 {
+      color: orange;
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+      margin-top: 0;
+    }
+    .long-desc-section ul {
+      margin: 0 0 20px 20px;
+      padding: 0;
+      color: #444;
+      font-size: 1rem;
+    }
+    .long-desc-section p {
+      color: #444;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔁 Header Include -->
+  <div id="header"></div>
+
+  <!-- 🔁 Main Layout -->
+  <div class="main-container">
+
+    <!-- 🔁 Sidebar Include -->
+    <div id="sidebar"></div>
+
+    <!-- 🎨 Home Decor Information -->
+    <div class="products-container">
+      <div class="product-detail-container">
+        <div class="product-image-side">
+          <img src="home-decor-banner.png" alt="Home Decor Items" />
+        </div>
+        <div class="product-info-side">
+          <div class="product-title">Home Decor</div>
+          <div class="product-desc">
+            JontyMart’s Home Decor collection offers beautifully handcrafted Indian items that bring warmth, tradition, and elegance to any living space. Our décor is ideal for homes, cafes, boutiques, and gift stores.
+          </div>
+          <div class="product-actions">
+            <a class="contact-btn whatsapp-btn" href="https://wa.me/61401356030?text=I'm%20interested%20in%20JontyMart%20Home%20Decor%20items." target="_blank">WhatsApp</a>
+            <a class="contact-btn email-btn" href="mailto:jontymarts@gmail.com?subject=Enquiry%20for%20Home%20Decor%20Items" target="_blank">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="long-desc-section">
+        <h2>About Our Home Decor Collection</h2>
+        <p>Our home decor items are curated from artisan hubs across India. These pieces come in a variety of materials and are perfect for interior design, gifting, or creating cozy vibes.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Handcrafted using natural & recycled materials</li>
+          <li>Items include wall hangings, vases, lamps, candles, and clocks</li>
+          <li>Eco-friendly and ethically sourced</li>
+          <li>Available in modern, ethnic, and boho designs</li>
+        </ul>
+
+        <h2>Applications</h2>
+        <ul>
+          <li>Enhance bedrooms, living rooms, cafes, and boutiques</li>
+          <li>Perfect as return gifts and festive hampers</li>
+          <li>Ideal for home staging or export gifting</li>
+        </ul>
+
+        <h2>Why Choose JontyMart?</h2>
+        <ul>
+          <li>Wide range of curated handcrafted products</li>
+          <li>Private labelling and international packaging options</li>
+          <li>Reliable supply for resellers and exporters</li>
+          <li>Support for small and bulk orders</li>
+        </ul>
+
+        <h2>Care Instructions</h2>
+        <p>Dust gently using a dry cloth. For wooden items, occasionally apply a mild polish. Keep candles away from direct sunlight to preserve scent and shape.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔁 Footer Include -->
+  <div id="footer"></div>
+
+  <!-- Script for shared includes -->
+  <script src="script.js"></script>
+</body>
+</html>

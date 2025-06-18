@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toys – JontyMart</title>
+  <meta name="description" content="Export-quality toys from India: wooden toys, learning puzzles, remote cars & educational fun for kids of all ages.">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .product-detail-container {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 30px 0;
+      overflow: hidden;
+    }
+
+    .product-image-side {
+      flex: 1 1 320px;
+      min-width: 260px;
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .product-image-side img {
+      max-width: 100%;
+      max-height: 320px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    }
+
+    .product-info-side {
+      flex: 2 1 400px;
+      min-width: 260px;
+      padding: 40px 30px 30px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .product-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 18px;
+    }
+
+    .product-desc {
+      font-size: 1.08rem;
+      color: #444;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+
+    .product-actions {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 22px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .whatsapp-btn { background: #25D366; }
+    .whatsapp-btn:hover { background: #1ebe57; }
+    .email-btn { background: #007BFF; }
+    .email-btn:hover { background: #0056b3; }
+
+    .long-desc-section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 0 0 30px 0;
+      padding: 35px 30px 30px 30px;
+      max-width: 900px;
+    }
+
+    .long-desc-section h2 {
+      color: orange;
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+      margin-top: 0;
+    }
+
+    .long-desc-section ul {
+      margin: 0 0 18px 20px;
+      padding: 0;
+      color: #444;
+      font-size: 1rem;
+    }
+
+    .long-desc-section p {
+      color: #444;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔁 Dynamic Header -->
+  <div id="header"></div>
+
+  <!-- 🔁 Page Main Layout -->
+  <div class="main-container">
+
+    <!-- 🔁 Sidebar Menu -->
+    <div id="sidebar"></div>
+
+    <!-- 🎮 Toys Content -->
+    <div class="products-container">
+      <div class="product-detail-container">
+        <div class="product-image-side">
+          <img src="toys-banner.png" alt="Toys Collection" />
+        </div>
+        <div class="product-info-side">
+          <div class="product-title">Toys & Kids Items</div>
+          <div class="product-desc">
+            At JontyMart, explore a playful world of Indian-made toys — from eco-friendly wooden toys to battery-powered remote cars. Each item is selected for fun, safety, and export quality.
+          </div>
+          <div class="product-actions">
+            <a class="contact-btn whatsapp-btn" href="https://wa.me/61401356030?text=Hi%20JontyMart%2C%20I'm%20interested%20in%20your%20Toys%20collection." target="_blank">WhatsApp</a>
+            <a class="contact-btn email-btn" href="mailto:jontymarts@gmail.com?subject=Enquiry%20for%20Toys%20Items" target="_blank">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="long-desc-section">
+        <h2>About Our Toys Collection</h2>
+        <p>Our toys inspire learning, adventure, and imagination. From colorful puzzles to mechanical toys, each product promotes child development and creativity in a safe and sustainable way.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Materials: Wood, plastic, rubber, eco-fabrics</li>
+          <li>Types: Puzzles, remote cars, educational sets, constructive kits</li>
+          <li>Safe for age groups: 2+ to 10 years (as specified)</li>
+          <li>Eco-friendly options available (wooden toys, recycled materials)</li>
+        </ul>
+
+        <h2>Applications</h2>
+        <ul>
+          <li>Ideal for gifting, schools, kids bedrooms/playrooms</li>
+          <li>Wholesale/resale in toy stores, flea markets, and online shops</li>
+          <li>Perfect for birthday packages and activity boxes</li>
+        </ul>
+
+        <h2>Why Choose JontyMart?</h2>
+        <ul>
+          <li>Sourced direct from Indian toy artisans and top manufacturers</li>
+          <li>Hand-inspected & packed for export readiness</li>
+          <li>Attractive pricing for small & bulk orders</li>
+          <li>Support for private labeling and custom bundling</li>
+        </ul>
+
+        <h2>Care Instructions</h2>
+        <p>
+          Clean with soft dry or damp cloth. Avoid soaking or direct sun for long periods.
+          Always follow age-marked safety usage. Recharge or replace batteries for electronic toys promptly.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔁 Dynamic Footer -->
+  <div id="footer"></div>
+
+  <!-- JS Loader for Header/Sidebar/Footer -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ceramic Products – JontyMart</title>
+  <meta name="description" content="Premium ceramic items for dining and décor: Mug sets, pots, plates, vases and more. Indian ceramics.">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .product-detail-container {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 30px 0;
+      overflow: hidden;
+    }
+    .product-image-side {
+      flex: 1 1 320px;
+      min-width: 260px;
+      background: #f8f8f8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .product-image-side img {
+      max-width: 100%;
+      max-height: 320px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    }
+    .product-info-side {
+      flex: 2 1 400px;
+      min-width: 260px;
+      padding: 40px 30px 30px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .product-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 18px;
+    }
+    .product-desc {
+      font-size: 1.08rem;
+      color: #444;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+    .product-actions {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 22px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+      color: #fff;
+    }
+    .whatsapp-btn { background: #25D366; }
+    .whatsapp-btn:hover { background: #1ebe57; }
+    .email-btn { background: #007BFF; }
+    .email-btn:hover { background: #0056b3; }
+    .long-desc-section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 0 0 30px 0;
+      padding: 35px 30px 30px 30px;
+      max-width: 900px;
+    }
+    .long-desc-section h2 {
+      color: orange;
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+      margin-top: 0;
+    }
+    .long-desc-section ul {
+      margin: 0 0 18px 20px;
+      padding: 0;
+      color: #444;
+      font-size: 1rem;
+    }
+    .long-desc-section p {
+      color: #444;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔁 Include Header -->
+  <div id="header"></div>
+
+  <!-- 🔁 Main Layout -->
+  <div class="main-container">
+
+    <!-- 🔁 Include Sidebar -->
+    <div id="sidebar"></div>
+
+    <!-- ☕ Ceramic Overview -->
+    <div class="products-container">
+      <div class="product-detail-container">
+        <div class="product-image-side">
+          <img src="ceramic-banner.png" alt="Ceramic Products" />
+        </div>
+        <div class="product-info-side">
+          <div class="product-title">Ceramic Products</div>
+          <div class="product-desc">
+            Discover JontyMart’s elegant and colorful ceramic creations — ideal for modern kitchens, cozy cafés, beautiful homes, and handcrafted gifting. Export-ready and made with love in India.
+          </div>
+          <div class="product-actions">
+            <a class="contact-btn whatsapp-btn" href="https://wa.me/61401356030?text=Hi%20JontyMart%2C%20I'm%20interested%20in%20your%20Ceramic%20Products." target="_blank">WhatsApp</a>
+            <a class="contact-btn email-btn" href="mailto:jontymarts@gmail.com?subject=Enquiry%20for%20Ceramic%20Products" target="_blank">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="long-desc-section">
+        <h2>About Our Ceramic Collection</h2>
+        <p>Crafted by regional Indian artisans, we offer mugs, cups, bowls, dishes, pots, vases, and more — perfect for gifting, showcasing, serving and home decor.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Material: Clay, stoneware, glazed ceramic</li>
+          <li>Products: Tea cups, dinner plates, vases, décor pots, mug sets</li>
+          <li>Techniques: Glazed painting, hand-molding, machine-fired</li>
+          <li>Finish: Matte, glossy, speckled, hand-painted, enamel</li>
+        </ul>
+
+        <h2>Applications</h2>
+        <ul>
+          <li>Perfect for cafes, restaurants, retail shops & minimalist homes</li>
+          <li>Ideal gift items for housewarmings and seasonal hampers</li>
+          <li>Used in decor, showcase setups, gifting, and daily use</li>
+        </ul>
+
+        <h2>Why Choose JontyMart?</h2>
+        <ul>
+          <li>Backed by skilled Indian ceramic artisans</li>
+          <li>Beautiful designs with global appeal</li>
+          <li>Custom branding & packaging options available</li>
+          <li>Heavy-duty packaging for damage-free export</li>
+        </ul>
+
+        <h2>Care Instructions</h2>
+        <p>Wash with mild soap & sponge. Avoid rough scouring pads. Microwave safe unless labeled otherwise. Handle décor pieces with extra care.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔁 Include Footer -->
+  <div id="footer"></div>
+
+  <!-- JS Loader -->
+  <script src="script.js"></script>
+</body>
+</html>
