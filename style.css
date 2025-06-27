@@ -326,11 +326,15 @@ body {
 @media (max-width: 767px) {
   .navbar {
     flex-direction: row;
-    padding: 8px 4px;
+    padding: 8px 8px; /* Increased side padding */
   }
-  .nav-link-left a,
+  .nav-link-left a {
+    font-size: 14px;
+    margin-left: 8px; /* Space from left edge */
+  }
   .nav-link-right a {
     font-size: 14px;
+    margin-right: 8px; /* Space from right edge */
   }
   .logo img {
     height: 40px;
@@ -348,11 +352,15 @@ body {
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 6px 2px;
+    padding: 6px 6px; /* Increased side padding */
   }
-  .nav-link-left a,
+  .nav-link-left a {
+    font-size: 13px;
+    margin-left: 6px; /* Space from left edge */
+  }
   .nav-link-right a {
     font-size: 13px;
+    margin-right: 6px; /* Space from right edge */
   }
   .logo img {
     height: 32px;
